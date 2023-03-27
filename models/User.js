@@ -1,6 +1,6 @@
-const { Schema, Types } = require("mongoose");
+const { Schema, Types, model } = require("mongoose");
 const { thoughtSchema } = require("./Thought");
-import { isEmail } from "validator";
+const { isEmail } = require("validator");
 
 const userSchema = new Schema(
   {
